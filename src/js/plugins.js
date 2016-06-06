@@ -23,4 +23,5 @@
 
 // Place any jQuery/helper plugins in here.
 
+//= libs/owl.carousel.min.js
 //= libs/smoothscroll.js

@@ -1,11 +1,25 @@
+$color-blue = #4168b9
+$color-grey = #909090
+$color-turq = #5adefb
+
 container(w = 1000px)
     display block
     max-width w
     margin 0 auto
     position relative
 
-// font(face = Regular)
-//     if face == Regular
-//         font-family "MyriadProRegular", sans-serif
-//     if face == Bold
-//         font-family "MyriadProBold", sans-serif
+font(face = Regular)
+    if face == Light
+        font-family "Ubuntu", sans-serif
+        font-weight 300
+    if face == Regular
+        font-family "Ubuntu", sans-serif
+        font-weight 400
+    if face == Bold
+        font-family "Ubuntu", sans-serif
+        font-weight 700
+    if face == Condensed
+        font-family "Ubuntu Condensed", sans-serif
+        font-weight 400
+
+

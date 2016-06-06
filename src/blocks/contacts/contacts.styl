@@ -1,0 +1,78 @@
+.contacts
+    container(1200px)
+    padding 10px 15px 0
+    display flex
+    flex-flow row nowrap
+    +below(767px)
+        flex-wrap wrap
+
+    &__maps
+        flex 0 0 40%
+        +below(767px)
+            flex 0 0 100%
+            order 2
+
+
+    &__map
+        display block
+        width 100%
+        height 350px
+        margin 0 0 40px
+
+        iframe
+            height 350px
+            width 100% !important
+
+    &__title
+        color #00caf6
+        font()
+        font-size 18px
+        text-transform uppercase
+        margin 0 0 20px
+
+    &__legal
+        p
+            color white
+            font()
+            font-size 14px
+            line-height 1.3
+            margin 0 0 1em
+
+    &__info
+        flex 0 1 60%
+        padding-left 30px
+        +below(767px)
+            flex 0 0 100%
+            padding-left 0
+        p
+            color white
+            font(Condensed)
+            font-size 18px
+            line-height 1.2
+            margin 0 0 30px
+
+    &__qr
+        display block
+        margin 50px 0 30px
+        +below(767px)
+            margin-left auto
+            margin-right auto
+
+    &__skype
+        color #0fbaf0
+        font(Condensed)
+        font-size 18px
+        margin 0 0 40px
+        +below(767px)
+            text-align center
+
+    &__skype-icon
+        position relative
+        top 18px
+        margin-right 15px
+
+    &__icons
+        margin 0 0 40px
+        +below(767px)
+            text-align center
+

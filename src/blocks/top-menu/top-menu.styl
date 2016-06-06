@@ -1,0 +1,43 @@
+.top-menu
+    padding 5px
+    background rgba(0,0,0,0.9)
+    +above(992px)
+        padding 0
+        background transparent
+
+    &__list
+        list-style none
+        font-size 0
+        padding 0
+        margin 0
+
+    &__item
+        display inline-block
+        vertical-align middle
+        color #909090
+        font(Condensed)
+        font-size 16px
+        line-height 1
+        padding 15px 9px
+        margin 0
+        +above(1170px)
+            padding 15px
+
+    &__link
+        color #909090
+        font(Condensed)
+        font-size 16px
+        line-height 1
+        text-decoration none
+        transition all .2s linear
+
+        ^[0]__item--featured &
+            color #5683C9
+            font-size 18px
+            font-weight bold
+
+        &:hover
+        ^[0]__item--current &
+            color #5adefb
+            text-decoration none
+

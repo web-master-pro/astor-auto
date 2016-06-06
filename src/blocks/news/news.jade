@@ -1,0 +1,30 @@
+mixin news()
+    section.news&attributes(attributes)
+        .news__header
+            h2.news__title Наши Новости
+            a(href="/news").news__all Все новости
+        
+        ul.news__list
+            li.news__item
+                img(src="assets/img/upload/21.jpg" title="Шумоизоляция со скидкой" alt="Шумоизоляция со скидкой").news__img
+                .news__info
+                    time(datetime="2016-05-12").news__time 12-05-2016
+                    h3.news__caption Шумоизоляция со скидкой
+                    p.news__descr Только в мае
+                    a(href="/news/shumoizolyaciya_so_skidkoj").news__more Подробнее
+
+            li.news__item
+                img(src="assets/img/upload/20.jpg" title="Подготовка авто к лету" alt="Подготовка авто к лету").news__img
+                .news__info
+                    time(datetime="2016-05-10").news__time 10-05-2016
+                    h3.news__caption Подготовка авто к лету
+                    p.news__descr Приглашаем клиентов подготовить свой автомобиль к лету и заправить кондиционер за 900р
+                    a(href="/news/podgotovka_avto_k_letu").news__more Подробнее
+
+            li.news__item
+                img(src="assets/img/upload/18.jpg" title="Сезонная переобувка" alt="Сезонная переобувка").news__img
+                .news__info
+                    time(datetime="2016-03-31").news__time 31-03-2016
+                    h3.news__caption Сезонная переобувка
+                    p.news__descr Комплекс шиномонтажных работ (Переобувка)
+                    a(href="/news/sezonnaya_pereobuvka").news__more Подробнее

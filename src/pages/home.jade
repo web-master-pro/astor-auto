@@ -1,7 +1,13 @@
 include ../blocks/browsehappy/browsehappy
 include ../blocks/header/header
+include ../blocks/nav/nav
+include ../blocks/serv-menu/serv-menu
+include ../blocks/actions/actions
+include ../blocks/news/news
+include ../blocks/social/social
+include ../blocks/contacts/contacts
 include ../blocks/footer/footer
-
+include ../blocks/side-button/side-button
 
 doctype html
 
@@ -11,14 +17,14 @@ html(lang="ru-RU")
 
     head
         meta(charset="utf-8")
-        title Автосервис Московского района Санкт-Петербурга, ремонт автомобилей, ремонт двигателя, диагностика автомобиля, ремонт авто, ремонт кузова - Автосервис «АСТОР», СПб
-        meta(name="description" content="Основная специализация автоцентра «Астор» - оказание качественных услуг по восстановлению технических возможностей автомобилей иностранных и отечественных производителей.")
-        meta(name="keywords" content="Автосервис Московского района Санкт-Петербурга, ремонт автомобилей, ремонт двигателя, диагностика автомобиля, ремонт авто, ремонт кузова")
+        title Главная страница | astor-auto
+        meta(name="description" content="")
+        meta(name="keywords" content="")
 
         meta(http-equiv="X-UA-Compatible" content="IE=edge")
         meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
         meta(name="generator" content="web-master-pro.ru")
-        
+
         link(rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png")
         link(rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png")
         link(rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png")
@@ -39,22 +45,36 @@ html(lang="ru-RU")
         meta(name="msapplication-TileImage" content="assets/img/favicons/mstile-144x144.png")
         meta(name="theme-color" content="#ffffff")
 
-        link( rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext')
-        link( rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=latin,cyrillic-ext')
+        link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext')
+        link(rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=latin,cyrillic-ext')
 
         link(rel="stylesheet" href="assets/css/style.min.css?rev=@@hash")
 
-    body
+    body.page.page--home
         +browsehappy()
-        +header()
-        
+        +nav()
+        +header-home()
+        section.section
+            h2.section__title Наши услуги
+            +serv-menu()
+            +actions()
+        .content
+            main.main.content__main
+                .main__main
+                    article.article
+                        h1 Автосервис в Московском районе
+                        p Основная специализация автоцентра &laquo;Астор&raquo; - оказание качественных услуг по восстановлению технических возможностей автомобилей иностранных и отечественных производителей.
+                        p Мы не первый десяток лет диагностируем и ремонтируем микроавтобусы, легковые авто, выполняем любой вид стайлинга и тюнинга, модернизируем внедорожники и другие виды индивидуальных транспортных средств. При автоцентре работает магазин оригинальных комплектующих, автоаксессуаров, сервисных товаров и масел. Поэтому в случае необходимости замены какого-то узла, мы всегда имеем возможность приобрести его без лишних затрат времени. На приобретаемые запасные детали действует обязательная длительная гарантия. Редко востребованные запчасти к японским и европейским автомобилям ограниченной серии, заказываем через собственный стол заказов &ndash; все происходит очень быстро.
+                        p Помимо ремонтных работ, наш сервис на профессиональном уровне оказывает услуги по техническому переоснащению, тюнингу, монтажу дополнительного оборудования и стайлингу грузопассажирских транспортных средств распространенных марок.
+                        a(href="/o_kompanii").article__more Подробнее...
+            aside.sidebar.content__sidebar
+                +news()
+        +social()
+        section.section.section--top-line
+            h2.section__title Контакты
+            +contacts()
         +footer()
-
-        //- .hidden
-        //-     +form-order()
-        //-     +popup-thankyou()
-        //-     +popup-privacy()
-            
+        +side-button()
 
         script(src="https://code.jquery.com/jquery-2.2.4.min.js")
         script window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')

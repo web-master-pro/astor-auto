@@ -1,0 +1,38 @@
+.content
+    container(1190px)
+    padding 40px 10px 20px
+    display flex
+    flex-flow row nowrap
+    +below(767px)
+        flex-wrap wrap
+
+    &__sidebar
+        flex 0 0 300px
+        padding 0
+        order 1
+        .page--home &
+            padding 0 15px 0 10px
+            flex 0 0 50%
+        +below(767px)
+            &
+            .page--home &
+                padding 0
+                flex 1 1 100%
+                order 2
+
+    &__main
+        flex 1 1 auto
+        padding 0 10px 0 30px
+        order 2
+        .page--home &
+            padding 0 10px 0 15px
+            flex 0 0 50%
+        +below(767px)
+            &
+            .page--home &
+                padding 0 5px 40px
+                flex 1 1 100%
+                order 1
+
+
+

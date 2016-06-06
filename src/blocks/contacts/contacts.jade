@@ -1,0 +1,67 @@
+mixin contacts()
+    .contacts&attributes(attributes)
+        .contacts__maps
+            .contacts__map#map
+                script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")
+                script.
+                    ymaps.ready(function () {
+                        var myMap = new ymaps.Map('map', {
+                                center: [59.866454, 30.355726],
+                                zoom: 16,
+                                controls: ['smallMapDefaultSet']
+                            }),
+                            myPlacemark = new ymaps.Placemark([59.866454, 30.355726]);
+                        myMap.geoObjects.add(myPlacemark);
+                        myMap.behaviors.disable(['drag', 'rightMouseButtonMagnifier', 'scrollZoom']);
+                    });
+            .contacts__map
+                script(src="//panoramas.api-maps.yandex.ru/embed/1.x/?lang=ru&ll=30.3565627%2C59.8666331&ost=dir%3A218.63479166666679%2C-1.2918560606060423~span%3A130%2C61.68229166666667%2C375&l=stv")
+
+            .contacts__legal
+                h3.contacts__title Реквизиты
+                p
+                    | ИП Шляков Артур Андреевич <br>
+                    | ИНН 780617978262 <br>
+                    | ОГРНИП-313784708500598 <br>
+                    | Фактический адрес: <br>
+                    | Санкт-Петербург, 196105, Витебский пр., д. 17 к. 10 <br>
+                    | Банк: ПАО «Банк «Санкт-Петербург» г. Санкт-Петербург <br>
+                    | Р/С 40802810190510000009 <br>
+                    | К/С 30101810900000000790 <br>
+                    | БИК 044030790
+
+        .contacts__info
+            p Автосервис «АСТОР» расположен по адресу:
+            p
+                | Санкт-Петербург, Витебский пр-т д.17,к.10 (ул. Бассейная 38 лит.В) <br>
+                | Ближайшие станции метро:<br>
+                | Парк победы, Московская, Звездная.
+
+            p Время работы: ПН-ВС с 9 до 21
+
+            p
+                | E-Mail: autotron@yandex.ru <br>
+                | Телефон/факс: <br>
+                | (812) 378-73-75 <br>
+                | Мастера участка ТО: <br>
+                | +7 905 277-74-74 <br>
+                | +7 906 277-74-74 <br>
+                | Мастер кузовного участка: <br>
+                | +7 960 277-74-74 <br>
+                | Администратор сервиса: <br>
+                | 378-47-01 <br>
+                | Магазин автозапчасти, комплектующие: <br>
+                | 378-47-15</p>
+
+            img(src="assets/img/qr.png" alt="QR").contacts__qr
+
+            .contacts__skype
+                a(href="#").contacts__skype-link 
+                    img(src="assets/img/call.png" alt="Skype звонок").contacts__skype-icon
+                | Skype звонок
+
+            .contacts__icons
+                img(src="assets/img/coffee-big.png" alt="").contacts__icon
+                img(src="assets/img/wifi-big.png" alt="").contacts__icon
+                img(src="assets/img/visa-big.png" alt="").contacts__icon
+                img(src="assets/img/maestro-big.png" alt="").contacts__icon

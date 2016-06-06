@@ -1,0 +1,47 @@
+.section
+    padding 15px 0
+    &--top-line
+        padding-top 20px
+        position relative
+        &::before
+            content ""
+            display block
+            height 5px
+            background url(img/line-bg.png) repeat-x
+            position absolute
+            top 0
+            left 0
+            right 0
+
+    &__inner
+        container(1170px)
+    &__title
+        color #4168b9
+        font(Condensed)
+        font-size 30px
+        text-transform uppercase
+        text-align center
+        margin 0 0 15px
+        position relative
+        overflow hidden
+        white-space nowrap
+
+        &::before
+        &::after
+            content ""
+            position relative
+            display inline-block
+            width 50%
+            height 1px
+            vertical-align middle
+            background #000
+            background-clip content-box
+            border-bottom 1px solid #383838
+
+        &::before
+            left -.5em;
+            margin -4px 0 0 -50%
+        &::after
+            left .5em;
+            margin -4px -50% 0 0
+

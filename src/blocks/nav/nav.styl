@@ -1,0 +1,44 @@
+.nav
+    background rgba(0,0,0,0.8)
+    height 50px
+    border-bottom 2px solid #1d2c4c
+    position fixed
+    left 0
+    right 0
+    top 0
+    z-index 500
+
+    &__inner
+        container(1170px)
+        padding 0
+
+    &__icons
+        display inline-block
+        position absolute
+        top 12px
+        left 10px
+
+    &__icon
+        display inline-block
+        vertical-align middle
+
+    &__menu
+        display none
+        position absolute
+        top 50px
+        left 0
+        right 0
+        +above(992px)
+            right 0
+            top 0
+            left auto
+            display block !important
+
+    &__menu-button
+        display block
+        position absolute
+        right 15px
+        top 10px
+        +above(992px)
+            display none
+

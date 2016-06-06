@@ -1,5 +1,51 @@
 .footer
-    overflow hidden
+    background-color #000
+    position relative
+    &::before
+        content ""
+        display block
+        height 5px
+        background url(img/line-bg.png) repeat-x
+        position absolute
+        top 0
+        left 0
+        right 0
 
     &__in
-        container(1000px)
+        container(1200px)
+        min-height 105px
+        padding 35px 15px 20px
+        display flex
+        flex-flow row nowrap
+        justify-content space-between
+        +below(479px)
+            flex-wrap wrap
+
+    &__company
+        flex 0 1 auto
+        display inline-block
+        color white
+        font()
+        font-size 14px
+        line-height 1.3
+        margin 0
+        +below(479px)
+            flex 1 1 100%
+            text-align center
+
+    &__developed
+        flex 0 0 auto
+        display inline-block
+        width 200px
+        margin -5px 0 0 10px
+        +below(479px)
+            display block
+            flex 1 1 100%
+            margin 20px 0 0
+
+    &__developed-logo
+        display block
+        width 100%
+        max-width 200px
+        height auto
+        margin 0 auto

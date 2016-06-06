@@ -1,0 +1,44 @@
+.menu-button
+    border none
+    border-radius none
+    background transparent
+    padding 0
+    width 28px
+    height 30px
+    cursor pointer
+
+    &__in:after
+    &__in:before
+        content ""
+        position absolute
+        left 0
+        top -9px
+
+    &__in:after
+        top 9px
+
+    &__in
+        position relative
+        display block
+
+    &__in
+    &__in:after
+    &__in:before
+        width 100%
+        height 4px
+        background-color white
+        // transition all 0.1s
+        backface-visibility hidden
+        border-radius 0px
+        transition background-color .3s linear, transform .1s linear
+        ^[0]:hover &
+            background-color #5adefb
+
+.menu-button.on .menu-button__in
+    background-color transparent
+
+.menu-button.on .menu-button__in:before
+    transform rotate(45deg) translate(5px, 5px)
+
+.menu-button.on .menu-button__in:after
+    transform rotate(-45deg) translate(7px, -8px)

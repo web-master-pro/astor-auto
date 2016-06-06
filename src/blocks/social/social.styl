@@ -1,0 +1,46 @@
+.social
+    container(1200px)
+    padding 20px 15px 40px
+
+.instagram
+
+    &__header
+        display block
+        width 100%
+        margin 0 0 20px
+        +below(767px)
+            text-align center
+
+    &__link
+        color white
+        text-decoration none
+        &:hover
+            text-decoration none
+
+    &__icon
+        display inline-block
+        vertical-align middle
+        margin-right 20px
+        +below(479px)
+            display block
+            margin 0 auto 20px
+
+    &__hashtag
+        display inline-block
+        vertical-align middle
+        color white
+        font()
+        font-size 32px
+        line-height 1
+        margin 0
+        +below(479px)
+            display block
+
+    &__widget
+        width 100%
+
+    &__stub
+        display block
+        width 100%
+        height auto
+        margin 0 auto

@@ -1,0 +1,13 @@
+include ../top-menu/top-menu
+include ../menu-button/menu-button
+
+mixin nav()
+    nav.nav
+        .nav__inner
+            .nav__icons
+                img(src="assets/img/coffee.png" alt="").nav__icon
+                img(src="assets/img/wifi.png" alt="").nav__icon
+                img(src="assets/img/visa.png" alt="").nav__icon
+                img(src="assets/img/maestro.png" alt="").nav__icon
+            +top-menu(class="nav__menu")
+            +menu-button(class="nav__menu-button")

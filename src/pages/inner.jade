@@ -1,0 +1,142 @@
+include ../blocks/browsehappy/browsehappy
+include ../blocks/header/header
+include ../blocks/nav/nav
+include ../blocks/serv-menu/serv-menu
+include ../blocks/actions/actions
+include ../blocks/social/social
+include ../blocks/contacts/contacts
+include ../blocks/breadcrumb/breadcrumb
+include ../blocks/footer/footer
+include ../blocks/side-button/side-button
+
+doctype html
+
+// Верстка сайта: http://web-master-pro.ru
+
+html(lang="ru-RU")
+
+    head
+        meta(charset="utf-8")
+        title Внутренняя страница | astor-auto
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        meta(name="generator" content="web-master-pro.ru")
+        
+        link(rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-touch-icon-57x57.png")
+        link(rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-touch-icon-60x60.png")
+        link(rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png")
+        link(rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-touch-icon-76x76.png")
+        link(rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png")
+        link(rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-touch-icon-120x120.png")
+        link(rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png")
+        link(rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-touch-icon-152x152.png")
+        link(rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon-180x180.png")
+        link(rel="icon" type="image/png" href="assets/img/favicons/favicon-32x32.png" sizes="32x32")
+        link(rel="icon" type="image/png" href="assets/img/favicons/favicon-194x194.png" sizes="194x194")
+        link(rel="icon" type="image/png" href="assets/img/favicons/favicon-96x96.png" sizes="96x96")
+        link(rel="icon" type="image/png" href="assets/img/favicons/android-chrome-192x192.png" sizes="192x192")
+        link(rel="icon" type="image/png" href="assets/img/favicons/favicon-16x16.png" sizes="16x16")
+        link(rel="shortcut icon" type="image/x-icon" href="assets/img/favicons/favicon.ico")
+        link(rel="manifest" href="assets/img/favicons/manifest.json")
+        meta(name="msapplication-TileColor" content="#2d89ef")
+        meta(name="msapplication-TileImage" content="assets/img/favicons/mstile-144x144.png")
+        meta(name="theme-color" content="#ffffff")
+
+        link( rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu+Condensed&subset=latin,cyrillic-ext')
+        link( rel='stylesheet' href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&subset=latin,cyrillic-ext')
+
+        link(rel="stylesheet" href="assets/css/style.min.css?rev=@@hash")
+
+    body.page.page--inner
+        +browsehappy()
+        +nav()
+        +header()
+        +actions()
+        .content
+            main.main.content__main
+                +breadcrumb()
+                .main__main
+                    article.article
+                        h1 Об автосервисе АСТОР
+                        p Удобный рабочий график автоцентра, его отличное техническое оснащение, профессионализм каждого мастера, позволяют нашей фирме выполнять диагностику и последующий необходимый ремонт быстро и качественно.&nbsp;<br />Кроме ремонтных работ выполняем: монтаж сигнализаций, антиугонных систем, парктроников, любой автомобильной мультимедийной техники, систем отопления, дополнительных навесов на капот (&laquo;кенгурятники&raquo;), врезку автолюков, установку стальных и алюминиевых профилей.
+                        h2 Почему клиенты выбирают Автотехцентр АСТОР?
+                        ol
+                            li Обязательная гарантия на любой вид выполненной работы, доказывает, что мы квалифицированно работаем над устранением любых неисправностей.
+                            li Мы на рынке работаем более 15 лет!
+                            li Близ ремонтных ангаров клиенты и их пассажиры могут с комфортом попить кофе или чай, воспользоваться БЕСПЛАТНЫМ Wi-Fi, посмотреть спутниковое телевидение.
+                            li Качество, скорость работы наших профессионалов гораздо выше стоимости их услуг.
+                            li Мы любим и уважаем каждого из всех своих клиентов. Видимо поэтому, каждый седьмой обращающийся к нам за помощью заказчик услуг &ndash; человек, доверившийся рекомендациям знакомых, коллег.
+                            li Мы принимаем всех в День обращения, потому что имеем достаточное количество постов для обслуживания машин. Нет необходимости томиться в длинной очереди, тратя впустую свободное время.
+                            li У нас есть собственный склад с ассортиментом большинства запчастей, поэтому необходимые замены узлов выполняем на месте, не теряя времени на поиски, доставку нужных деталей.
+                            li Мы ждем владельцев автомобилей ежедневно, с 9.00 и до 21.00.
+                            li Список всех предстоящих работ согласовываем с клиентом, выполняем задачи точно в срок и согласно заранее составленного перечня. Обратившись к нам за помощью, Вы сразу получите полную информацию о видах необходимого ремонта, общей продолжительности работ и их стоимости. Любые корректировки задач выполняем после согласования с заказчиком.
+                            li Работа нашего сервиса СЕРТИФИЦИРОВАНА, поэтому мы имеем право на обслуживание авто на ГАРАНТИИ производителя. При этом наши расценки на треть ниже, чем установлены у официальных дилеров.
+                            li Наш инструментарий и диагностическое оборудование позволяет проводить ремонтные работы согласно нормативам производителя, поэтому у наших клиентов не возникает проблем с дальнейшим обслуживание авто на гарантии.
+                            li К нам удобно добираться. Наш адрес: Санкт-Петербург, проспект Витебский, здание № 17, к. 10.
+                            li Расчет проводим наличным и безналичным способом.
+                            li Клиенты, заключающие с нами долгосрочные контракты, получают дополнительные скидки.
+                            li Это не все лучшие стороны Автотехцентра &laquo;АСТОР&raquo;&hellip;
+                        
+                        h3 Помимо прочих установок для ремонта авто, наш автоцентр оснащен:
+                        ul
+                            li гидравлическими подъемниками с максимально допустимой нагрузкой 5 тонн, производства &laquo;BEND-PAK&raquo;;
+                            li современным гидравлическим надежным прессом;
+                            li модернизированным устройством для замены тормозной жидкости и последующей прокачки тормозной системы;
+                            li пневмоинструментарием;
+                            li современными адаптерами для восстановления состояния подвески &laquo;KLANN&raquo;, демонтажа и замены амортизационных стоек;
+                            li надежной аппаратурой для производства тормозных стоек;
+                            li скоростным механизмом для протачивания тормозных дисков;
+                            li фирменным монтажным станком &laquo;SICE&raquo; с автоматической системой управления;
+                            li надежным и проверенным станком для балансировки;
+                            li собственной дископрокаточной установкой;
+                            li скоростным устройством для откачки масла с помощью вакуума;
+                            li оборудованием для пневмо-раздачи масла с датчиками, определяющими количество влитого продукта,
+                            li компьютеризированной системой &laquo;Beissbarth&raquo; с встроенными восемью датчиками;
+                            li гидравлическим пятитонным подъемником на 4-х стойках;
+                            li системным сканером &laquo;LAUNCH&raquo;;
+                            li имитатором возможных системных ошибок;
+                            li стендом для промывки линии питания;
+                            li устройством для ультразвуковой очистки форсунок;
+                            li тестером двигателя &laquo;MOTODOC&raquo;,
+                            li газоанализатором &laquo;INFRACAR&raquo; с четырехкомпонентной системой.
+                       
+                        p Благодаря столь современному оснащению, наши квалифицированные мастера способны выполнять покрасочные и восстановительные работы любого уровня сложности.
+                        
+                        h3 Беремся за кузовные работы любой сложности:
+                        ul
+                            li восстанавливаем геометрию кузова;
+                            li выполняем локальные рихтовочные процедуры;
+                            li восстанавливаем целостность алюминиевых кузовных элементов, используя аргоновую сварку;
+                            li применяем кузовной стаппель, дающий максимальное усилие в 10 т, адаптеры &laquo;Chiff&raquo;, механизмы производства Car-Oliner Speed 5т, &laquo;Telmig Spotter&raquo; и &laquo;Miracle System&raquo; оснастку.&nbsp;
+
+                        p Рассчитывая смету за услугу по восстановлению кузова, мы учитываем уровень трудоемкости работы (согласно нормативам AUDATEX), стоимость замененных деталей.
+                        p Выполняем покраску автомобилей со съемом или частичным съемом наружных элементов, проводим тюнинговую окраску обвесов для кузова легковых городских автомобилей и внедорожников, используя:
+                        ul
+                            li покрасочно-сушильную камеру;
+                            li панельные сушки &laquo;Trisk&raquo;;
+                            li возможности лаборатории для подбора эмали и приготовления нужны оттенков;
+                            li шлифовочные установки производства &laquo;Festool&raquo;;
+
+                        p Имеем возможность одновременной подготовки к окраске до 6 автомобилей. Смету за услугу окраски авто составляем с учетом стоимости автоэмали, объема подготовительных и монтажных работ, трудоемкости процесса. В работе применяем материалы производства SIKKENS, ЗМ и пр.
+                        p Работы с целью снизить шумоизоляцию и виброизоляцию авто
+                        p Антикоррозийное покрытие выполняем с помощью материала &laquo;Finikor&raquo;, поэтому Вашему авто больше не будет грозить появление разрастающихся пятен ржавчины.
+                        p Реализуем оптовые партии, выполняем розничную продажу выполненных на современном оборудовании автостекол (боковые и форточки) для транспортных средств коммерческого назначения. Предлагаем изделия для микроавтобусов производства: Ивеко, Мерседес, компании Форд, Пежо, фирмы Фольксваген, Фиат, Ситроен, Рено и прочих.
+
+            aside.sidebar.content__sidebar
+                +serv-menu()
+        +social()
+        section.section.section--top-line
+            h2.section__title Контакты
+            +contacts()
+        +footer()
+        +side-button()
+
+        script(src="https://code.jquery.com/jquery-2.2.4.min.js")
+        script window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')
+        script(src="assets/js/plugins.min.js?rev=@@hash")
+        script(src="assets/js/app.min.js?rev=@@hash")
+
+

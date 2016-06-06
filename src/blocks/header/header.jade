@@ -1,6 +1,32 @@
+include ../logo/logo
+mixin header-home()
+    header.header&attributes(attributes)
+        .header__in
+            +logo(class="header__logo")
+            .header__contacts
+                | Санкт-Петербург, Витебский пр., д. 17 к. 10<br>
+                | <span>+7 (812) 378-73-75</span><br>
+                | autotron@yandex.ru
+            a(href="/zapis_na_servis_online").header__btn-online Записаться на сервис ON-LINE
+            a(href="http://www.tuningbus.ru" target="_blank").header__btn-autobus переоборудование микроавтобусов
+
+    .slider
+        .slider__slide.slider__slide--1
+            .slider__text
+                h3.slider__title Ремонт автомобилей
+                p.slider__descr Автосервис АСТОР предлагает своим клиентам качественное обслуживание и ремонт  автомобилей. Мы гарантируем, что все работы будут выполнены профессиональными мастерами.
+        .slider__slide.slider__slide--2
+            .slider__text
+                h3.slider__title Кузовной ремонт
+                p.slider__descr Наш кузовной цех готов принять автомобили с любыми кузовными повреждениями: ремонт крыла, ремонт двери, ремонт вмятин и царапин на кузове и даже полное восстановление автомобиля после серьезного ДТП — АСТОР — все по силам!
+
 mixin header()
     header.header&attributes(attributes)
         .header__in
-            .header__logo(title="Logo")
-            h1.header__title Заголовок страницы
-            
+            +logo(class="header__logo")
+            .header__contacts
+                | Санкт-Петербург, Витебский пр., д. 17 к. 10<br>
+                | <span>+7 (812) 378-73-75</span><br>
+                | autotron@yandex.ru
+            a(href="/zapis_na_servis_online").header__btn-online Записаться на сервис ON-LINE
+            a(href="http://www.tuningbus.ru" target="_blank").header__btn-autobus переоборудование микроавтобусов

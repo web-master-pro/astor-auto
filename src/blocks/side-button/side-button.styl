@@ -1,0 +1,21 @@
+.side-button
+    display block
+    width 50px
+    height 250px
+    background url(img/side-button.jpg) no-repeat right center
+    background-size contain
+    position fixed
+    right 0
+    top 50%
+    transform translateY(-50%)
+    z-index 300
+    opacity .8
+    transition all .3s linear
+    &:hover
+        opacity 1
+    +below(992px)
+        width 30px
+        height 150px
+    +below(767px)
+        display none
+
