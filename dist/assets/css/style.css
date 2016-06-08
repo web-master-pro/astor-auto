@@ -1,0 +1,2492 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css *//**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */html {
+    font-family: sans-serif;
+    /* 2 */
+
+    -webkit-text-size-adjust: 100%;
+    /* 1 */
+        -ms-text-size-adjust: 100%;
+    /* 2 */;
+}/**
+ * Remove the margin in all browsers (opinionated).
+ */body {
+    margin: 0;
+}/* HTML5 display definitions
+   ========================================================================== *//**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    /* 1 */
+    display: block;
+}/**
+ * Add the correct display in IE 9-.
+ */audio,
+canvas,
+progress,
+video {
+    display: inline-block;
+}/**
+ * Add the correct display in iOS 4-7.
+ */audio:not([controls]) {
+    display: none;
+    height: 0;
+}/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */progress {
+    vertical-align: baseline;
+}/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */template,
+[hidden] {
+    display: none;
+}/* Links
+   ========================================================================== *//**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */a {
+    background-color: transparent;
+    /* 1 */
+
+    -webkit-text-decoration-skip: objects;
+    /* 2 */;
+}/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */a:active,
+a:hover {
+    outline-width: 0;
+}/* Text-level semantics
+   ========================================================================== *//**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */abbr[title] {
+    /* 1 */
+    text-decoration: underline;
+    /* 2 */
+    text-decoration: underline dotted;
+    border-bottom: none;
+    /* 2 */;
+}/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */b,
+strong {
+    font-weight: inherit;
+}/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */b,
+strong {
+    font-weight: bolder;
+}/**
+ * Add the correct font style in Android 4.3-.
+ */dfn {
+    font-style: italic;
+}/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */h1 {
+    margin: .67em 0;
+    font-size: 2em;
+}/**
+ * Add the correct background and color in IE 9-.
+ */mark {
+    color: #000;
+    background-color: #ff0;
+}/**
+ * Add the correct font size in all browsers.
+ */small {
+    font-size: 80%;
+}/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */sub,
+sup {
+    position: relative;
+    vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+}
+
+sub {
+    bottom: -.25em;
+}
+
+sup {
+    top: -.5em;
+}/* Embedded content
+   ========================================================================== *//**
+ * Remove the border on images inside links in IE 10-.
+ */img {
+    border-style: none;
+}/**
+ * Hide the overflow in IE.
+ */svg:not(:root) {
+    overflow: hidden;
+}/* Grouping content
+   ========================================================================== *//**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */code,
+kbd,
+pre,
+samp {
+    font-family: monospace, monospace;
+    /* 1 */
+    font-size: 1em;
+    /* 2 */;
+}/**
+ * Add the correct margin in IE 8.
+ */figure {
+    margin: 1em 40px;
+}/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */hr {
+    /* 1 */
+    overflow: visible;
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+    /* 1 */
+    height: 0;
+    /* 2 */;
+}/* Forms
+   ========================================================================== *//**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */button,
+input,
+optgroup,
+select,
+textarea {
+    /* 1 */
+    margin: 0;
+    font: inherit;
+    /* 2 */;
+}/**
+ * Restore the font weight unset by the previous rule.
+ */optgroup {
+    font-weight: bold;
+}/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */button,
+input {
+    /* 1 */
+    overflow: visible;
+}/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */button,
+select {
+    /* 1 */
+    text-transform: none;
+}/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+    /* 2 */;
+}/**
+ * Remove the inner border and padding in Firefox.
+ */button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}/**
+ * Restore the focus styles unset by the previous rule.
+ */button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */fieldset {
+    margin: 0 2px;
+    padding: .35em .625em .75em;
+    border: 1px solid #c0c0c0;
+}/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */legend {
+    /* 2 */
+    display: table;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    /* 1 */
+    max-width: 100%;
+    /* 1 */
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+    /* 1 */
+    color: inherit;
+    /* 1 */;
+}/**
+ * Remove the default vertical scrollbar in IE.
+ */textarea {
+    overflow: auto;
+}/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */[type="checkbox"],
+[type="radio"] {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    /* 1 */
+    padding: 0;
+    /* 2 */;
+}/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */[type="search"] {
+    /* 1 */
+    outline-offset: -2px;
+
+    -webkit-appearance: textfield;
+    /* 2 */;
+}/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */::-webkit-input-placeholder {
+    opacity: .54;
+    color: inherit;
+}/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */::-webkit-file-upload-button {
+    /* 1 */
+    font: inherit;
+
+    -webkit-appearance: button;
+    /* 2 */;
+}/* 
+ * 	Core Owl Carousel CSS File
+ *	v1.3.3
+ *//* clearfix */.owl-carousel .owl-wrapper:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+    line-height: 0;
+}/* display none until init */.owl-carousel {
+    position: relative;
+    display: none;
+    width: 100%;
+    -ms-touch-action: pan-y;
+}
+
+.owl-carousel .owl-wrapper {
+    position: relative;
+    display: none;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+}
+
+.owl-carousel .owl-wrapper-outer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 625px;
+}
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+    -webkit-transition: height 500ms ease-in-out;
+       -moz-transition: height 500ms ease-in-out;
+         -o-transition: height 500ms ease-in-out;
+            transition: height 500ms ease-in-out;
+}
+
+.owl-carousel .owl-item {
+    float: left;
+}
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+    cursor: pointer;
+}
+
+.owl-controls {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}/* mouse grab icon */.grabbing {
+    cursor: url("../grabbing.png") 8 8, move;
+}/* fix */.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item {
+    -webkit-transform: translate3d(0,0,0);
+       -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+
+        -ms-backface-visibility: hidden;
+}/*
+* 	Owl Carousel Owl Demo Theme
+*	v1.3.3
+*/.owl-theme .owl-controls {
+    position: relative;
+    top: -235px;
+    margin-top: 10px;
+    text-align: center;
+}/* Styling Next and Prev buttons */.owl-theme .owl-controls .owl-buttons div {
+    display: inline-block;
+    zoom: 1;
+    width: 25px;
+    height: 25px;
+    /*IE7 life-saver */
+    margin: 5px;
+    padding: 3px 10px;
+    /*IE7 fix*/
+    opacity: .5;
+    color: #fff;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    font-size: 0;
+
+    *display: inline;
+    filter: Alpha(Opacity=50);
+}/* Clickable class fix problem with hover on touch devices *//* Use it for non-touch hover action */.owl-theme .owl-controls.clickable .owl-buttons div:hover {
+    text-decoration: none;
+    /*IE7 fix*/
+    opacity: 1;
+
+    filter: Alpha(Opacity=100);
+}/* Styling Pagination*/.owl-theme .owl-controls .owl-page {
+    display: inline-block;
+    zoom: 1;
+
+    *display: inline;
+    /*IE7 life-saver */;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 8px;
+    height: 8px;
+    margin: 5px 5px;
+    -webkit-border-radius: 20px;
+       -moz-border-radius: 20px;
+            border-radius: 20px;
+    background: #fff;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #3c61b4;
+}/* If PaginationNumbers is true */.owl-theme .owl-controls .owl-page span.owl-numbers {
+    width: auto;
+    height: auto;
+    padding: 2px 10px;
+    color: #fff;
+    -webkit-border-radius: 30px;
+       -moz-border-radius: 30px;
+            border-radius: 30px;
+    font-size: 12px;
+}/* preloading images */.owl-item.loading {
+    min-height: 150px;
+    background: url("../AjaxLoader.gif") no-repeat center center;
+}
+
+.owl-pagination {
+    position: absolute;
+    top: 6px;
+    left: 50%;
+    width: 160px;
+    margin-left: 375px;
+    text-align: center;
+}
+
+.owl-buttons {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 331px;
+}
+
+.owl-prev {
+    position: relative;
+    background: url("../img/prev.png") no-repeat;
+}
+
+.owl-next {
+    position: relative;
+    left: 150px;
+    background: url("../img/next.png") no-repeat;
+}/* 
+ *  Owl Carousel CSS3 Transitions 
+ *  v1.3.2
+ */.owl-origin {
+    -webkit-perspective: 1200px;
+       -moz-perspective: 1200px;
+            perspective: 1200px;
+    -webkit-perspective-origin-x: 50%;
+       -moz-perspective-origin-x: 50%;
+    -webkit-perspective-origin-y: 50%;
+       -moz-perspective-origin-y: 50%;
+}/* fade */.owl-fade-out {
+    z-index: 10;
+    -webkit-animation: fadeOut .7s both ease;
+       -moz-animation: fadeOut .7s both ease;
+         -o-animation: fadeOut .7s both ease;
+            animation: fadeOut .7s both ease;
+}
+
+.owl-fade-in {
+    -webkit-animation: fadeIn .7s both ease;
+       -moz-animation: fadeIn .7s both ease;
+         -o-animation: fadeIn .7s both ease;
+            animation: fadeIn .7s both ease;
+}/* backSlide */.owl-backSlide-out {
+    -webkit-animation: backSlideOut 1s both ease;
+       -moz-animation: backSlideOut 1s both ease;
+         -o-animation: backSlideOut 1s both ease;
+            animation: backSlideOut 1s both ease;
+}
+
+.owl-backSlide-in {
+    -webkit-animation: backSlideIn 1s both ease;
+       -moz-animation: backSlideIn 1s both ease;
+         -o-animation: backSlideIn 1s both ease;
+            animation: backSlideIn 1s both ease;
+}/* goDown */.owl-goDown-out {
+    -webkit-animation: scaleToFade .7s ease both;
+       -moz-animation: scaleToFade .7s ease both;
+         -o-animation: scaleToFade .7s ease both;
+            animation: scaleToFade .7s ease both;
+}
+
+.owl-goDown-in {
+    -webkit-animation: goDown .6s ease both;
+       -moz-animation: goDown .6s ease both;
+         -o-animation: goDown .6s ease both;
+            animation: goDown .6s ease both;
+}/* scaleUp */.owl-fadeUp-in {
+    -webkit-animation: scaleUpFrom .5s ease both;
+       -moz-animation: scaleUpFrom .5s ease both;
+         -o-animation: scaleUpFrom .5s ease both;
+            animation: scaleUpFrom .5s ease both;
+}
+
+.owl-fadeUp-out {
+    -webkit-animation: scaleUpTo .5s ease both;
+       -moz-animation: scaleUpTo .5s ease both;
+         -o-animation: scaleUpTo .5s ease both;
+            animation: scaleUpTo .5s ease both;
+}/* Keyframes *//*empty*/a,
+input,
+*:focus {
+    outline: none;
+}
+
+html {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+       -moz-box-sizing: inherit;
+            box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    min-width: 320px;
+    height: 100%;
+    padding-top: 50px;
+    color: #fff;
+    background: #272626 url("../img/bg.png");
+    font-size: 14px;
+    -webkit-font-smoothing: subpixel-antialiased !important;
+    line-height: 1.2;
+}
+
+body -webkit-backface-visibility hidden -moz-backface-visibility hidden {
+    -ms-backface-visibility: hidden;
+}
+
+body:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.hidden {
+    display: none;
+}
+
+.actions {
+    position: relative;
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.actions__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+
+.actions__item {
+    position: relative;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    max-width: 570px;
+    margin: 5px;
+    vertical-align: top;
+    border: 1px solid #fff;
+}
+
+.actions__img {
+    width: 100%;
+    max-width: 575px;
+    height: auto;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+         -o-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.actions__item:hover .actions__img {
+    -webkit-transform: rotate(-1deg) scale(1.1);
+       -moz-transform: rotate(-1deg) scale(1.1);
+        -ms-transform: rotate(-1deg) scale(1.1);
+         -o-transform: rotate(-1deg) scale(1.1);
+            transform: rotate(-1deg) scale(1.1);
+    opacity: .9;
+}
+
+.actions__title {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    display: inline-block;
+    margin: 0;
+    padding: 5px 25px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgba(34,183,234,.52);
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+.article__more {
+    display: block;
+    width: 100%;
+    margin: 0 0 1em;
+    text-align: right;
+    text-decoration: underline;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.article__more:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.breadcrumb {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.breadcrumb__list {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumb__item {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.breadcrumb__item::after {
+    content: " | ";
+}
+
+.breadcrumb__item:last-child::after {
+    content: "";
+}
+
+.breadcrumb__link {
+    text-decoration: underline;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+.breadcrumb__link:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.browsehappy {
+    margin: 0;
+    padding: 1em 0 .9em;
+    text-align: center;
+    color: #333;
+    background: #ffe983;
+}
+
+.browsehappy a,
+.browsehappy a:visited {
+    text-decoration: underline;
+}
+
+.browsehappy a:hover {
+    text-decoration: none;
+}
+
+.contacts {
+    position: relative;
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-flow: row nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 15px 0;
+
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+}
+
+.contacts__maps {
+            flex: 0 0 40%;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+}
+
+.contacts__map {
+    display: block;
+    width: 100%;
+    height: 350px;
+    margin: 0 0 40px;
+}
+
+.contacts__map iframe {
+    width: 100% !important;
+    height: 350px;
+}
+
+.contacts__title {
+    margin: 0 0 20px;
+    text-transform: uppercase;
+    color: #00caf6;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contacts__legal p {
+    margin: 0 0 1em;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.contacts__info {
+            flex: 0 1 60%;
+    padding-left: 30px;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 1 60%;
+        -ms-flex: 0 1 60%;
+}
+
+.contacts__info p {
+    margin: 0 0 30px;
+    color: #fff;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.contacts__qr {
+    display: block;
+    margin: 50px 0 30px;
+}
+
+.contacts__skype {
+    margin: 0 0 40px;
+    color: #0fbaf0;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contacts__skype-icon {
+    position: relative;
+    top: 18px;
+    margin-right: 15px;
+}
+
+.contacts__icons {
+    margin: 0 0 40px;
+}
+
+.content {
+    position: relative;
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-flow: row nowrap;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 40px 10px 20px;
+
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+}
+
+.content__sidebar {
+            order: 1;
+            flex: 0 0 300px;
+    padding: 0;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-box-ordinal-group: 2;
+       -moz-box-ordinal-group: 2;
+    -webkit-flex: 0 0 300px;
+        -ms-flex: 0 0 300px;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+}
+
+.page--home .content__sidebar {
+            flex: 0 0 50%;
+    padding: 0 15px 0 10px;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+}
+
+.content__main {
+            order: 2;
+            flex: 1 1 auto;
+    padding: 0 10px 0 30px;
+
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+    -webkit-box-ordinal-group: 3;
+       -moz-box-ordinal-group: 3;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+    -ms-flex-order: 2;
+    -webkit-order: 2;
+}
+
+.page--home .content__main {
+            flex: 0 0 50%;
+    padding: 0 10px 0 15px;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+}
+
+.footer {
+    position: relative;
+    background-color: #000;
+}
+
+.footer::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 5px;
+    content: "";
+    background: url("../img/line-bg.png") repeat-x;
+}
+
+.footer__in {
+    position: relative;
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+    max-width: 1200px;
+    min-height: 105px;
+    margin: 0 auto;
+    padding: 35px 15px 20px;
+
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+.footer__company {
+    display: inline-block;
+            flex: 0 1 auto;
+    margin: 0;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.3;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 1 auto;
+        -ms-flex: 0 1 auto;
+}
+
+.footer__developed {
+    display: inline-block;
+            flex: 0 0 auto;
+    width: 200px;
+    margin: -5px 0 0 10px;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+}
+
+.footer__developed-logo {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    background-image: url("../img/line-slider.png"), url("../img/slide1.jpg");
+    background-repeat: repeat-x, no-repeat;
+    background-position: left bottom, center center;
+}
+
+.page--home .header {
+    position: absolute;
+    z-index: 100;
+    top: 50px;
+    right: 0;
+    left: 0;
+    background: none;
+}
+
+.header__in {
+    position: relative;
+    display: block;
+    max-width: 1170px;
+    height: 210px;
+    margin: 0 auto;
+    padding: 20px 15px 30px;
+}
+
+.page--home .header__in {
+    height: 470px;
+}
+
+.header__logo {
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    left: 15px;
+}
+
+.header__contacts {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    width: 100%;
+    max-width: 398px;
+    padding: 10px;
+    text-align: right;
+    color: #fff;
+    background-color: rgba(0,0,0,.6);
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.header__contacts span {
+    color: #4168b9;
+}
+
+.header__btn-online {
+    position: absolute;
+    top: 135px;
+    right: 10px;
+    display: block;
+    width: 210px;
+    height: 52px;
+    padding: 8px 25px 5px 60px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: #446aba;
+    background: -webkit-gradient(linear, left top, left bottom, from(#446aba), to(#529cd4));
+    background: -webkit-linear-gradient(top, #446aba 0%, #529cd4 100%);
+    background:    -moz-linear-gradient(top, #446aba 0%, #529cd4 100%);
+    background:      -o-linear-gradient(top, #446aba 0%, #529cd4 100%);
+    background:         linear-gradient(to bottom, #446aba 0%, #529cd4 100%);
+    background-color: #446aba;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.header__btn-online:hover {
+    background: #4165d7;
+}
+
+.header__btn-online::before {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    content: "";
+    background: url("../img/pen.png") no-repeat 0 0;
+}
+
+.page--home .header__btn-online {
+    top: 280px;
+}
+
+.header__btn-autobus {
+    position: absolute;
+    top: 135px;
+    right: 235px;
+    display: block;
+    width: 250px;
+    height: 52px;
+    padding: 8px 15px 5px 40px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: none;
+    text-transform: uppercase;
+    color: #fff;
+    background: #0a8eab;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0a8eab), to(#3ca9cf));
+    background: -webkit-linear-gradient(top, #0a8eab 0%, #3ca9cf 100%);
+    background:    -moz-linear-gradient(top, #0a8eab 0%, #3ca9cf 100%);
+    background:      -o-linear-gradient(top, #0a8eab 0%, #3ca9cf 100%);
+    background:         linear-gradient(to bottom, #0a8eab 0%, #3ca9cf 100%);
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.header__btn-autobus:hover {
+    background: #0a8eab;
+}
+
+.header__btn-autobus::before {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    display: block;
+    width: 36px;
+    height: 18px;
+    content: "";
+    background: url("../img/bus.png") no-repeat 0 0;
+}
+
+.page--home .header__btn-autobus {
+    top: 340px;
+    right: 10px;
+}
+
+.slider {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 484px;
+    padding-bottom: 0;
+    background: url("../img/line-slider.png") repeat-x left bottom;
+}
+
+.slider::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 14px;
+    content: "";
+    background: url("../img/line-slider.png") repeat-x left bottom;
+}
+
+.slider__slide {
+    position: relative;
+    height: 470px;
+}
+
+.slider__slide--1 {
+    background: url("../img/slide1.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.slider__slide--2 {
+    background: url("../img/slide2.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+}
+
+.slider__text {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width: 770px;
+    margin-left: -580px;
+    padding: 25px;
+    background-color: rgba(0,0,0,.57);
+}
+
+.slider__title {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    color: #4168b9;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.slider__descr {
+    margin: 0;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.slider .owl-pagination {
+    top: 12px;
+}
+
+.page--home .slider .owl-controls {
+    z-index: 250;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo__img {
+    display: block;
+    width: 100%;
+    max-width: 314px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main__main h1 {
+    margin: 0 0 1em;
+    text-transform: uppercase;
+    color: #4168b9;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-weight: 400;
+}
+
+.main__main h2 {
+    margin: 0 0 1em;
+    text-transform: uppercase;
+    color: #00caf6;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-weight: 400;
+}
+
+.main__main h3 {
+    margin: 0 0 1em;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.main__main p {
+    margin: 0 0 1em;
+    text-align: justify;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.main__main ul,
+.main__main ol {
+    margin: 0 0 1em 25px;
+    padding: 0;
+}
+
+.main__main ul li,
+.main__main ol li {
+    margin: 0 0 .7em;
+    padding: 0;
+}
+
+.menu-button {
+    width: 28px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    -webkit-border-radius: none;
+       -moz-border-radius: none;
+            border-radius: none;
+    background: transparent;
+}
+
+.menu-button__in:after,
+.menu-button__in:before {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    content: "";
+}
+
+.menu-button__in:after {
+    top: 9px;
+}
+
+.menu-button__in {
+    position: relative;
+    display: block;
+}
+
+.menu-button__in,
+.menu-button__in:after,
+.menu-button__in:before {
+    width: 100%;
+    height: 4px;
+    -webkit-transition: background-color .3s linear, -webkit-transform .1s linear;
+       -moz-transition: background-color .3s linear, transform .1s linear, -moz-transform .1s linear;
+         -o-transition: background-color .3s linear, transform .1s linear, -o-transform .1s linear;
+            transition: background-color .3s linear, -webkit-transform .1s linear;
+            transition: background-color .3s linear, transform .1s linear;
+            transition: background-color .3s linear, transform .1s linear, -webkit-transform .1s linear, -moz-transform .1s linear, -o-transform .1s linear;
+    -webkit-backface-visibility: hidden;
+       -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+    background-color: #fff;
+}
+
+.menu-button:hover .menu-button__in,
+.menu-button:hover .menu-button__in:after,
+.menu-button:hover .menu-button__in:before {
+    background-color: #5adefb;
+}
+
+.menu-button.on .menu-button__in {
+    background-color: transparent;
+}
+
+.menu-button.on .menu-button__in:before {
+    -webkit-transform: rotate(45deg) translate(5px, 5px);
+       -moz-transform: rotate(45deg) translate(5px, 5px);
+        -ms-transform: rotate(45deg) translate(5px, 5px);
+         -o-transform: rotate(45deg) translate(5px, 5px);
+            transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-button.on .menu-button__in:after {
+    -webkit-transform: rotate(-45deg) translate(7px, -8px);
+       -moz-transform: rotate(-45deg) translate(7px, -8px);
+        -ms-transform: rotate(-45deg) translate(7px, -8px);
+         -o-transform: rotate(-45deg) translate(7px, -8px);
+            transform: rotate(-45deg) translate(7px, -8px);
+}
+
+.nav {
+    position: fixed;
+    z-index: 500;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 50px;
+    border-bottom: 2px solid #1d2c4c;
+    background: rgba(0,0,0,.8);
+}
+
+.nav__inner {
+    position: relative;
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav__icons {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    display: inline-block;
+}
+
+.nav__icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav__menu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    left: 0;
+    display: none;
+}
+
+.nav__menu-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: block;
+}
+
+.news {
+    display: block;
+    width: 100%;
+}
+
+.news__header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+    width: 100%;
+
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+.news__title {
+            flex: 0 0 auto;
+    margin: 0 .5em 1em 0;
+    text-transform: uppercase;
+    color: #4168b9;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+}
+
+.news__all {
+            flex: 0 0 auto;
+    text-decoration: underline;
+    color: #5adefb;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+}
+
+.news__all:hover {
+    text-decoration: underline;
+    color: #5adefb;
+}
+
+.news__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.news__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display:    -moz-box;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+    margin: 0 0 20px;
+    padding: 0;
+
+    -webkit-box-pack: justify;
+       -moz-box-pack: justify;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+}
+
+.news__img {
+    display: block;
+            flex: 0 0 auto;
+            align-self: flex-start;
+
+    -webkit-align-self: flex-start;
+    -webkit-box-flex: 0;
+       -moz-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+    -ms-flex-item-align: start;
+}
+
+.news__info {
+            flex: 1 1 auto;
+    padding-left: 15px;
+
+    -webkit-box-flex: 1;
+       -moz-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+}
+
+.news__time {
+    display: block;
+    margin: 0 0 10px;
+    color: #b5b5b5;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.news__caption {
+    margin: 0 0 10px;
+    text-transform: uppercase;
+    color: #4168b9;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.news__descr {
+    margin: 0 0 10px;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.news__more {
+    display: block;
+    text-align: right;
+    text-decoration: underline;
+    color: #5adefb;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.news__more:hover {
+    text-decoration: underline;
+    color: #5adefb;
+}
+
+.section {
+    padding: 15px 0;
+}
+
+.section--top-line {
+    position: relative;
+    padding-top: 20px;
+}
+
+.section--top-line::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: block;
+    height: 5px;
+    content: "";
+    background: url("../img/line-bg.png") repeat-x;
+}
+
+.section__inner {
+    position: relative;
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.section__title {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 15px;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #4168b9;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.section__title::before,
+.section__title::after {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 1px;
+    content: "";
+    vertical-align: middle;
+    border-bottom: 1px solid #383838;
+    background: #000;
+    -webkit-background-clip: content-box;
+       -moz-background-clip: content-box;
+            background-clip: content-box;
+
+         -o-background-clip: content-box;
+}
+
+.section__title::before {
+    left: -.5em;
+    margin: -4px 0 0 -50%;
+}
+
+.section__title::after {
+    left: .5em;
+    margin: -4px -50% 0 0;
+}
+
+.serv-menu {
+    position: relative;
+    display: block;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.serv-menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 0;
+}
+
+.serv-menu__item {
+    position: relative;
+    display: inline-block;
+    width: 280px;
+    height: 106px;
+    margin: 5px;
+    vertical-align: top;
+    border: 1px solid #fff;
+}
+
+.page--inner .serv-menu__item {
+    height: 72px;
+}
+
+.serv-menu__link {
+    text-decoration: none;
+}
+
+.serv-menu__img {
+    position: absolute;
+    top: 0;
+    left: 52px;
+    width: auto;
+    max-height: 104px;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+
+.page--inner .serv-menu__img {
+    max-height: 70px;
+}
+
+.serv-menu__caption {
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    left: 105px;
+    display: block;
+    display: block;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4168b9;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.serv-menu__descr {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    left: 105px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #fefefe;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.page--inner .serv-menu__descr {
+    display: none;
+}
+
+.serv-menu__more {
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    left: 105px;
+    display: block;
+    margin: 0;
+    text-align: center;
+    color: #59defb;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.side-button {
+    position: fixed;
+    z-index: 300;
+    top: 50%;
+    right: 0;
+    display: block;
+    width: 50px;
+    height: 250px;
+    -webkit-transition: all .3s linear;
+       -moz-transition: all .3s linear;
+         -o-transition: all .3s linear;
+            transition: all .3s linear;
+    -webkit-transform: translateY(-50%);
+       -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: .8;
+    background: url("../img/side-button.jpg") no-repeat right center;
+    -webkit-background-size: contain;
+       -moz-background-size: contain;
+         -o-background-size: contain;
+            background-size: contain;
+}
+
+.side-button:hover {
+    opacity: 1;
+}
+
+.social {
+    position: relative;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px 40px;
+}
+
+.instagram__header {
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+}
+
+.instagram__link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.instagram__link:hover {
+    text-decoration: none;
+}
+
+.instagram__icon {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.instagram__hashtag {
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.instagram__widget {
+    width: 100%;
+}
+
+.instagram__stub {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.top-menu {
+    padding: 5px;
+    background: rgba(0,0,0,.9);
+}
+
+.top-menu__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
+}
+
+.top-menu__item {
+    display: inline-block;
+    margin: 0;
+    padding: 15px 9px;
+    vertical-align: middle;
+    color: #909090;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.top-menu__link {
+    -webkit-transition: all .2s linear;
+       -moz-transition: all .2s linear;
+         -o-transition: all .2s linear;
+            transition: all .2s linear;
+    text-decoration: none;
+    color: #909090;
+    font-family: "Ubuntu Condensed", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.top-menu__item--featured .top-menu__link {
+    color: #5683c9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-menu__link:hover,
+.top-menu__item--current .top-menu__link {
+    text-decoration: none;
+    color: #5adefb;
+}
+
+@media only screen and (min-width: 992px) {
+    .nav__menu {
+        top: 0;
+        right: 0;
+        left: auto;
+        display: block !important;
+    }
+
+    .nav__menu-button {
+        display: none;
+    }
+
+    .news__info {
+        padding-left: 40px;
+    }
+
+    .top-menu {
+        padding: 0;
+        background: transparent;
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .top-menu__item {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .slider__text {
+        right: 280px;
+        left: 15px;
+        width: auto;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .page--home .slider .owl-pagination {
+        top: 40px;
+        left: 50%;
+        margin: 0;
+        -webkit-transform: translateX(-50%);
+           -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+             -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+
+    .page--home .slider .owl-buttons {
+        top: 26px;
+        left: 50%;
+        margin-left: -80px;
+        -webkit-transform: translateX(-50%);
+           -moz-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+             -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .side-button {
+        width: 30px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .header__in {
+        height: 280px;
+    }
+
+    .header__btn-autobus {
+        top: 200px;
+        right: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .contacts {
+                flex-wrap: wrap;
+
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+    }
+
+    .contacts__maps {
+                order: 2;
+                flex: 0 0 100%;
+
+        -webkit-box-flex: 0;
+           -moz-box-flex: 0;
+        -webkit-box-ordinal-group: 3;
+           -moz-box-ordinal-group: 3;
+        -webkit-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+    }
+
+    .contacts__info {
+                flex: 0 0 100%;
+        padding-left: 0;
+
+        -webkit-box-flex: 0;
+           -moz-box-flex: 0;
+        -webkit-flex: 0 0 100%;
+            -ms-flex: 0 0 100%;
+    }
+
+    .contacts__qr {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .contacts__skype {
+        text-align: center;
+    }
+
+    .contacts__icons {
+        text-align: center;
+    }
+
+    .content {
+                flex-wrap: wrap;
+
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+    }
+
+    .content__sidebar,
+    .page--home .content__sidebar {
+                order: 2;
+                flex: 1 1 100%;
+        padding: 0;
+
+        -webkit-box-flex: 1;
+           -moz-box-flex: 1;
+        -webkit-box-ordinal-group: 3;
+           -moz-box-ordinal-group: 3;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+    }
+
+    .content__main,
+    .page--home .content__main {
+                order: 1;
+                flex: 1 1 100%;
+        padding: 0 5px 40px;
+
+        -webkit-box-flex: 1;
+           -moz-box-flex: 1;
+        -webkit-box-ordinal-group: 2;
+           -moz-box-ordinal-group: 2;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+    }
+
+    .side-button {
+        display: none;
+    }
+
+    .instagram__header {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header__in {
+        height: auto;
+    }
+
+    .header__logo {
+        position: relative;
+        top: auto;
+        left: auto;
+        display: block;
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+
+    .header__contacts {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: block;
+        width: 100%;
+        margin: 0 auto 15px;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .header__btn-online {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto 10px;
+    }
+
+    .page--home .header__btn-online {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto 10px;
+    }
+
+    .header__btn-autobus {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto 0;
+    }
+
+    .page--home .header__btn-autobus {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 0 auto 0;
+    }
+
+    .slider {
+        height: 625px;
+    }
+
+    .slider__slide {
+        height: 625px;
+    }
+
+    .slider__text {
+        right: 0;
+        bottom: 30px;
+        left: 0;
+        padding: 10px;
+    }
+
+    .slider__title {
+        margin-bottom: 7px;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .slider__descr {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .page--home .slider .owl-pagination {
+        top: 5px;
+    }
+
+    .page--home .slider .owl-buttons {
+        top: -11px;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .actions {
+        padding: 0 10px;
+    }
+
+    .actions__title {
+        top: 0;
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .footer__in {
+                flex-wrap: wrap;
+
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+    }
+
+    .footer__company {
+                flex: 1 1 100%;
+        text-align: center;
+
+        -webkit-box-flex: 1;
+           -moz-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+    }
+
+    .footer__developed {
+        display: block;
+                flex: 1 1 100%;
+        margin: 20px 0 0;
+
+        -webkit-box-flex: 1;
+           -moz-box-flex: 1;
+        -webkit-flex: 1 1 100%;
+            -ms-flex: 1 1 100%;
+    }
+
+    .instagram__icon {
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .instagram__hashtag {
+        display: block;
+    }
+}
+
+@-webkit-keyframes empty {
+    0% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes empty {
+    0% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes empty {
+    0% {
+        opacity: 1;
+    }
+}
+
+@keyframes empty {
+    0% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes backSlideOut {
+    25% {
+        -webkit-transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    75% {
+        -webkit-transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+
+    100% {
+        -webkit-transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+}
+
+@-moz-keyframes backSlideOut {
+    25% {
+        -moz-transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    75% {
+        -moz-transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+
+    100% {
+        -moz-transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+}
+
+@-o-keyframes backSlideOut {
+    25% {
+        transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    75% {
+        transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+
+    100% {
+        transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+}
+
+@keyframes backSlideOut {
+    25% {
+        -webkit-transform: translateZ(-500px);
+           -moz-transform: translateZ(-500px);
+                transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    75% {
+        -webkit-transform: translateZ(-500px) translateX(-200%);
+           -moz-transform: translateZ(-500px) translateX(-200%);
+                transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+
+    100% {
+        -webkit-transform: translateZ(-500px) translateX(-200%);
+           -moz-transform: translateZ(-500px) translateX(-200%);
+                transform: translateZ(-500px) translateX(-200%);
+        opacity: .5;
+    }
+}
+
+@-webkit-keyframes backSlideIn {
+    0%,
+    25% {
+        -webkit-transform: translateZ(-500px) translateX(200%);
+        opacity: .5;
+    }
+
+    75% {
+        -webkit-transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes backSlideIn {
+    0%,
+    25% {
+        -moz-transform: translateZ(-500px) translateX(200%);
+        opacity: .5;
+    }
+
+    75% {
+        -moz-transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    100% {
+        -moz-transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@-o-keyframes backSlideIn {
+    0%,
+    25% {
+        transform: translateZ(-500px) translateX(200%);
+        opacity: .5;
+    }
+
+    75% {
+        transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    100% {
+        transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes backSlideIn {
+    0%,
+    25% {
+        -webkit-transform: translateZ(-500px) translateX(200%);
+           -moz-transform: translateZ(-500px) translateX(200%);
+                transform: translateZ(-500px) translateX(200%);
+        opacity: .5;
+    }
+
+    75% {
+        -webkit-transform: translateZ(-500px);
+           -moz-transform: translateZ(-500px);
+                transform: translateZ(-500px);
+        opacity: .5;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0) translateX(0);
+           -moz-transform: translateZ(0) translateX(0);
+                transform: translateZ(0) translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes scaleToFade {
+    to {
+        -webkit-transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes scaleToFade {
+    to {
+        -moz-transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes scaleToFade {
+    to {
+        -o-transform: scale(.8);
+           transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+@keyframes scaleToFade {
+    to {
+        -webkit-transform: scale(.8);
+           -moz-transform: scale(.8);
+             -o-transform: scale(.8);
+                transform: scale(.8);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes goDown {
+    from {
+        -webkit-transform: translateY(-100%);
+    }
+}
+
+@-moz-keyframes goDown {
+    from {
+        -moz-transform: translateY(-100%);
+    }
+}
+
+@-o-keyframes goDown {
+    from {
+        -o-transform: translateY(-100%);
+           transform: translateY(-100%);
+    }
+}
+
+@keyframes goDown {
+    from {
+        -webkit-transform: translateY(-100%);
+           -moz-transform: translateY(-100%);
+             -o-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+@-webkit-keyframes scaleUpFrom {
+    from {
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes scaleUpFrom {
+    from {
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes scaleUpFrom {
+    from {
+        -o-transform: scale(1.5);
+           transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes scaleUpFrom {
+    from {
+        -webkit-transform: scale(1.5);
+           -moz-transform: scale(1.5);
+             -o-transform: scale(1.5);
+                transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes scaleUpTo {
+    to {
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes scaleUpTo {
+    to {
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@-o-keyframes scaleUpTo {
+    to {
+        -o-transform: scale(1.5);
+           transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+@keyframes scaleUpTo {
+    to {
+        -webkit-transform: scale(1.5);
+           -moz-transform: scale(1.5);
+             -o-transform: scale(1.5);
+                transform: scale(1.5);
+        opacity: 0;
+    }
+}
