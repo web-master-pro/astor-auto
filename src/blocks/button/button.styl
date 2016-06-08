@@ -1,0 +1,24 @@
+button()
+    display inline-block
+    height 30px
+    border none
+    border-radius 3px
+    background #249CBE
+    padding 5px 8px
+    color #000
+    font()
+    font-size 14px
+    line-height 1
+    text-align center
+    text-decoration none
+    outline none
+    cursor pointer
+    transition all 0.3s ease
+
+    &:hover
+        color @color
+        text-decoration none
+        background darken(#249CBE, 15%)
+
+.button
+    button()

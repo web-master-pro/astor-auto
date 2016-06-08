@@ -31,7 +31,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu+Condensed&amp;subset=latin,cyrillic-ext">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,700&amp;subset=latin,cyrillic-ext">
-    <link rel="stylesheet" href="assets/css/style.min.css?rev=85823bcd063ef899e91c4e24fc131ccc">
+    <link rel="stylesheet" href="assets/css/style.min.css?rev=12f2d72540bc290cae0488f04304e047">
 </head>
 
 <body class="page page--inner">
@@ -83,7 +83,7 @@
                 <br>
                 <span>+7 (812) 378-73-75</span>
                 <br>autotron@yandex.ru
-            </div><a href="/zapis_na_servis_online" class="header__btn-online">Записаться на сервис ON-LINE</a><a href="http://www.tuningbus.ru" target="_blank" class="header__btn-autobus">переоборудование микроавтобусов</a>
+            </div><a href="#form-order" class="header__btn-online js-popup">Записаться на сервис ON-LINE</a><a href="http://www.tuningbus.ru" target="_blank" class="header__btn-autobus">переоборудование микроавтобусов</a>
         </div>
     </header>
     <div class="actions">
@@ -390,13 +390,27 @@
             </div>
         </div>
     </footer>
-    <a href="/zapis_na_servis_online" role="button" title="Записаться на сервис on-line" class="side-button"></a>
+    <a href="#form-order" role="button" title="Записаться на сервис on-line" class="side-button js-popup"></a>
+    <div class="hidden">
+        <form action="#" method="POST" id="form-order" class="form-order popup">
+            <h3 class="form-order__title">Запись на сервис on-line</h3>
+            <div class="input-block">
+                <label class="input-block__label">Ваше имя: *</label>
+                <input type="text" name="name" required="required" class="input-block__input" />
+            </div>
+            <div class="input-block">
+                <label class="input-block__label">Ваш телефон: *</label>
+                <input type="tel" name="phone" required="required" class="input-block__input" />
+            </div>
+            <button type="submit" class="button form-order__button">Отправить заявку</button>
+        </form>
+    </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script>
         window.jQuery || document.write('<script src="assets/js/jquery.min.js"><\/script>')
     </script>
-    <script src="assets/js/plugins.min.js?rev=3d5bfbe7fc53e65bc3bb3fafaf566920"></script>
-    <script src="assets/js/app.min.js?rev=af01a8036cf23e9bd23787b931a9d878"></script>
+    <script src="assets/js/plugins.min.js?rev=83baee7d22b12fdbe7dc482ba896e7de"></script>
+    <script src="assets/js/app.min.js?rev=d7af653e2ebb15ef0d8c4c2ba6f3a6da"></script>
 </body>
 
 </html>

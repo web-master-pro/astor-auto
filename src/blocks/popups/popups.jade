@@ -1,0 +1,11 @@
+mixin form-order(addclass)
+    form.form-order.popup(action="#", method="POST")#form-order&attributes(attributes)
+        h3.form-order__title Запись на сервис on-line
+        .input-block
+            label.input-block__label Ваше имя: *
+            input(type="text" name="name" required).input-block__input
+        .input-block
+            label.input-block__label Ваш телефон: *
+            input(type="tel" name="phone" required).input-block__input
+        button(type="submit").button.form-order__button Отправить заявку
+
